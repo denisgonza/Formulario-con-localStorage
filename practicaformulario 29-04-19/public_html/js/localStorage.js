@@ -27,7 +27,7 @@ function AgregarRegistro() {
         TelefonoPv: $("#telefonopv").val()
     });
 
-    if (validarFormulario()) {
+    if (validarFormulario()) {//Comprueba que los campos no esten vacios
         dbRegistros.push(datos_cliente); // Guardar datos en el array definido globalmente
         localStorage.setItem("dbRegistros", JSON.stringify(dbRegistros));
 
