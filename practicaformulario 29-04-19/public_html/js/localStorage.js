@@ -149,7 +149,6 @@ $(".btnEliminar").on("click", function () {
 });
 
 $(".btnEditar").on("click", function () {
-    alert("¿ Quieres editar ?");
     // Cambiamos el modo ( operacion )
     $(".modo").html("<span class=''>Edit</span> Modo edición");
     operacion = "E";
