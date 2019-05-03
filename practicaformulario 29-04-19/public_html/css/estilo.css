@@ -1,0 +1,221 @@
+/*----------------------------------Estilos CSS--------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.formulario {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid red;
+}
+
+.cabeceraform {
+    text-align: center;
+    background-color: red;
+    padding: 10px;
+}
+
+.contenido {
+    background: linear-gradient(#f9f9f9, #e9e9e9);
+    padding: 20px;
+}
+
+fieldset {
+    padding: 18px;
+    background: whitesmoke;
+    border: 1px solid silver;
+}
+
+legend {
+    font-family: Arial;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin: 0;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin: 0;
+}
+
+.empresa {
+    float: left;
+    width: 48%;
+    margin: 0;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: silver;
+    background-color: inherit;
+    outline: none;
+    margin: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=text]:hover, input[type=email]:hover, input[type=number]:hover {
+    border-color: black;
+    -webkit-transition: 0.7;
+    transition: 0.7s;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus {
+    border-bottom-color: red;
+}
+
+.cliente {
+    float: right;
+    width: 48%;
+    margin: 0;
+}
+
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.filaprincipal:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.formufooter {
+    text-align: center;
+    background-color: red;
+    padding: 8px;
+}
+.boton {
+    background-color: white;
+    padding: 12px;
+    border: 1px solid;
+    border-color: darkkhaki;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: ghostwhite;
+}b
+
+.boton:active {
+    background-color: whitesmoke;
+}
+
+.proveedor {
+    padding-top: 5px;
+}
+
+.btnEditar, .btnEliminar {
+    text-decoration: none;
+    background-color: red;
+    color: black;
+    padding: 6px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+/*Estilo de Tabla*/
+.tabla {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla td, .tabla th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.tabla tr:nth-child(even){background-color: #f2f2f2;}
+
+.tabla tr:hover {background-color: #ddd;}
+
+.tabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+    table {
+        width:100%;
+    }
+
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .formulario {
+        width: 100%;
+    }
+
+    .tabla {
+        width: 100%;
+    }
+
+    .tablaheader {
+        width: 100%;
+    }
+
+    .formulario, .col-25, .col-75, input[type=text], input[type=number], input[type=email] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .empresa {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .cliente {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
